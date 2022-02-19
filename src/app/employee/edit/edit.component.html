@@ -1,0 +1,28 @@
+<div>
+    <h1>{{header}}</h1>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <div>
+            <label for="">Employee ID  </label>
+            <input type="text" name="id" [ngModel]="employee.id" >
+        </div>
+        <br>
+        <div>
+            <label for="">Employee NAME  </label>
+            <input type="text" name="name" [ngModel]="employee.name">
+        </div>
+        <br>
+        <div>
+            <label for="">Employee EMAIL  </label>
+            <input type="text" name="email" [ngModel]="employee.email">
+        </div>
+        <br>
+        <div>
+            <label for="">Employee Phone  </label>
+            <input type="text" name="phone" [ngModel]="employee.phone">
+        </div>
+        <br>
+        <div>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+</div>
